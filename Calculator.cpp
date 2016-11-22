@@ -9,7 +9,7 @@ int main()
     int wynik;
    
     do
-    {
+    {   cout<<"Podaj numer dzialania: "<<endl;
         cout << "[1] Dodawanie" << endl;
         cout << "[2] Odejmowanie" << endl;
         cout << "[3] Mnozenie" << endl;
@@ -25,7 +25,7 @@ int main()
             cout << "Podaj liczbe: "<<endl;
               cin >> liczba2;
                 wynik = liczba1 + liczba2;
-              cout << "wynik: " << wynik;
+              cout << "wynik: " << wynik<<endl;
                 break;
             }
             {
@@ -35,7 +35,7 @@ int main()
               cout << "Podaj liczbe: "<<endl;
                cin >> liczba2;
                 wynik = liczba1 - liczba2;
-               cout << "wynik: " << wynik;
+               cout << "wynik: " << wynik<<endl;
                 break;
             }
             {
@@ -45,7 +45,7 @@ int main()
               cout << "Podaj liczbe:"<<endl;
                cin >> liczba2;
                 wynik = liczba1 * liczba2;
-              cout << "wynik: " << wynik;
+              cout << "wynik: " << wynik<<endl;
                 break;
             }
             {
@@ -59,11 +59,11 @@ int main()
                 else;
                
                 wynik = liczba1 / liczba2;
-                cout << "wynik: " << wynik;
+                cout << "wynik: " << wynik<<endl;
                 break;
             }
         }
-    } while( liczba1 == 0 );
+    } while( liczba1 != 0 );
    
     return 0;
 }
